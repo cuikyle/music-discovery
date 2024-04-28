@@ -1,0 +1,72 @@
+{
+  "name": "musicdiscovery",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "@emotion/react": "11.11.1",
+    "@emotion/styled": "11.11.0",
+    "@mui/icons-material": "5.15.15",
+    "@mui/lab": "5.0.0-alpha.133",
+    "@mui/material": "5.13.4",
+    "@mui/styled-engine-sc": "5.12.0",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "13.4.0",
+    "@testing-library/user-event": "13.5.0",
+    "@visx/clip-path": "^3.3.0",
+    "@visx/event": "^3.3.0",
+    "@visx/gradient": "^3.3.0",
+    "@visx/group": "^3.3.0",
+    "@visx/hierarchy": "^3.3.0",
+    "@visx/mock-data": "^3.3.0",
+    "@visx/responsive": "^3.10.2",
+    "@visx/scale": "^3.5.0",
+    "@visx/shape": "^3.5.0",
+    "@visx/visx": "^3.10.2",
+    "@visx/zoom": "^3.3.0",
+    "apexcharts": "3.41.0",
+    "axios-mock-adapter": "1.21.4",
+    "d3": "^3.x",
+    "d3-scale-chromatic": "^3.1.0",
+    "d3-shape": "^3.2.0",
+    "framer-motion": "^11.0.24",
+    "react": "18.2.0",
+    "react-apexcharts": "1.4.0",
+    "react-d3-tree": "^3.6.2",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.12.1",
+    "styled-components": "5.3.11",
+    "stylis-plugin-rtl": "2.1.1",
+    "web-vitals": "2.1.4"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "overrides": {
+    "@popperjs/core": "2.11.4"
+  }
+}

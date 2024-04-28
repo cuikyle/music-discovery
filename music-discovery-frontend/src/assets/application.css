@@ -1,0 +1,85 @@
+.searchbar-icon {
+    clip-path: circle(50%);
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.info-image {
+    clip-path: circle(50%);
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.center {
+    text-align: center;
+}
+
+.dropshadow {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.background-grey {
+    background-color: #eeeeee;
+}
+
+.set-behind-nav {
+    z-index: 10;
+    position: fixed;
+}
+
+.sidepanel-inner {
+    background-color: white;
+    padding: 5%;
+}
+
+.node-icon {
+    clip-path: circle(50%);
+    object-fit: cover;
+}
+
+.node {
+    cursor: pointer;
+}
+
+.node circle {
+    fill: #601b1b;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+.node text {
+    font: 10px sans-serif;
+}
+
+.link {
+    fill: none;
+    stroke: #701e1e;
+    stroke-width: 2px;
+}
+
+/*The below are to override some CSS from MUI*/
+.no-margin-padding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.header-margin {
+    margin-top: 1.5em !important;
+}
+
+.image-header-margin {
+    margin-top: 10% !important;
+}
+
+.bottom-left-nav {
+    position: fixed !important;
+    left: 1.25em !important;
+    bottom: 20px !important;
+    margin: 0 auto !important;
+    z-index: 999 !important;
+    background-color: white !important;
+}
+

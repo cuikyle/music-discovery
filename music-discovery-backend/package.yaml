@@ -1,0 +1,99 @@
+name:    MusicDiscoveryServer
+version: "0.0.0"
+
+dependencies:
+
+- base >=4.9.1.0 && <5
+- aeson
+- rio
+- http-client
+- http-client-tls
+- http-types
+- wreq
+- base64-bytestring
+- time
+- lens-aeson
+- bytestring
+- text
+- unordered-containers
+- servant-server
+- wai
+- warp
+- transformers
+- wai-cors
+- hedis
+- read-env-var
+
+default-extensions:
+- ApplicativeDo
+- BangPatterns
+- BinaryLiterals
+- ConstraintKinds
+- DataKinds
+- DefaultSignatures
+- DeriveDataTypeable
+- DeriveFoldable
+- DeriveFunctor
+- DeriveGeneric
+- DeriveTraversable
+- DeriveLift
+- DerivingStrategies
+- DoAndIfThenElse
+- DuplicateRecordFields
+- EmptyDataDecls
+- EmptyCase
+- ExistentialQuantification
+- FlexibleContexts
+- FlexibleInstances
+- FunctionalDependencies
+- GADTs
+- GeneralizedNewtypeDeriving
+- InstanceSigs
+- KindSignatures
+- LambdaCase
+- MultiParamTypeClasses
+- MultiWayIf
+- NamedFieldPuns
+- NoImplicitPrelude
+- NumericUnderscores
+- OverloadedStrings
+- PartialTypeSignatures
+- PatternGuards
+- PolyKinds
+- RankNTypes
+- RecordWildCards
+- ScopedTypeVariables
+- StandaloneDeriving
+- TupleSections
+- TypeFamilies
+- TypeSynonymInstances
+- ViewPatterns
+- TypeApplications
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wpartial-fields
+- -Wredundant-constraints
+- -Wwarn=deprecations
+- -Werror=incomplete-patterns
+
+# The library contains all of our application code. The executable
+# defined below is just a thin wrapper.
+library:
+  source-dirs: src
+
+# Runnable executable for our application
+executables:
+  MusicDiscoveryServer:
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - MusicDiscoveryServer
