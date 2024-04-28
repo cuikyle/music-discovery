@@ -4,9 +4,6 @@ COPY . /app
 
 WORKDIR /app
 
-# RUN stack setup && stack build --only-dependencies
-# RUN stack build
-
 RUN stack build --fast
 
 EXPOSE 8000

@@ -38,7 +38,7 @@ insert keyR valR ttlR = do
     redisConInfo <- redisConnectInfo
     runCommand redisConInfo $ void $ setex (pack . show $ keyR) ttlR valR
 
--- fetches key from Redis
+-- fetches KVP from Redis if it exists
 fetch :: String -> IO (Maybe ByteString)
 fetch keyR = do
     redisConInfo <- redisConnectInfo

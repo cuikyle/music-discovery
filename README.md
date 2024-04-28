@@ -3,7 +3,7 @@ I've been learning Haskell and wanted to make something a little more complex th
 
 
 ## Backend
-The backend is written in Haskell and uses Redis as a cache to store previous responses. 
+The backend is written in Haskell and uses Redis as a cache to store previous responses. The core modules are located in `music-discovery-backend/src`.
 ### Building and Running
 To run the backend, some prerequisites are:
 * You have access to the Spotify public APIs and have received a Spotify ClientID (see: https://developer.spotify.com/documentation/web-api/tutorials/getting-started)
@@ -28,7 +28,7 @@ stack run
 - read-env-var
 
 ## Frontend
-The frontend is using JS + React, VisX for rendering the tree, and framer-motion for animations. 
+The frontend is using JS + React, VisX for rendering the tree, and framer-motion for animations. The core pieces are locatedin `music-discovery-frontend/src`.
 
 ### Building and Running
 To run the app (defaulting on port 3000):
