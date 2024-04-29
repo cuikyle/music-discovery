@@ -42,3 +42,5 @@ react-scripts start
 - VisX
 - D3.js
 - framer-motion
+
+![example image](example.PNG)
