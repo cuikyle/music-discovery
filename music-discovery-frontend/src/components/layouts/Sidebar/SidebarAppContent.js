@@ -74,7 +74,7 @@ export function SidebarAppContent({showAboutArtist, setArtistTreeData, setRootAr
                         ))}
 
                     </List>
-                    <Button variant="contained" className={"center"} href={`${"FILL THIS IN!"}`} target={"_blank"}>
+                    <Button variant="contained" className={"center"} href={`https://github.com/cuikyle/music-discovery/`} target={"_blank"}>
                         See the source code
                     </Button>
 
